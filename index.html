@@ -173,8 +173,7 @@
   .optin-inner p { font-size: 15px; color: var(--muted); margin-bottom: 28px; line-height: 1.6; }
   .optin-form { display: flex; flex-direction: column; gap: 14px; }
   .optin-form input[type="text"],
-  .optin-form input[type="email"],
-  .optin-form input[type="tel"] {
+  .optin-form input[type="email"] {
     background: var(--card); border: 1px solid var(--border);
     color: var(--text); padding: 13px 16px; border-radius: 10px;
     font-size: 15px; outline: none; width: 100%;
@@ -364,14 +363,9 @@
   <div class="optin-inner">
     <h3>Get a Free AI Audit</h3>
     <p>We'll review your current marketing setup and tell you exactly where AI can save you time and bring in more clients. No pitch. Just a real look.</p>
-    <form class="optin-form" action="https://app.gohighlevel.com/v2/preview/mCqd6lCXpg1LuR0fnmbC" method="GET" target="_blank" onsubmit="return validateForm()">
+    <form class="optin-form" action="https://app.gohighlevel.com/v2/preview/mCqd6lCXpg1LuR0fnmbC" method="GET" target="_blank">
       <input type="text" name="name" placeholder="Your name" required>
       <input type="email" name="email" placeholder="Your email" required>
-      <input type="tel" name="phone" placeholder="Your phone number" required>
-      <div class="consent-row">
-        <input type="checkbox" id="sms-consent" name="sms_consent" required>
-        <label for="sms-consent">I agree to receive SMS messages from NorthLane AI. Message and data rates may apply. Reply STOP to opt out at any time.</label>
-      </div>
       <button type="submit" class="optin-submit">Get My Free Audit</button>
     </form>
     <p class="optin-fine">By submitting, you agree to our privacy policy. We do not share your information with third parties.</p>
@@ -388,16 +382,6 @@
     </div>
   </footer>
 </div>
-<script>
-function validateForm() {
-  var consent = document.getElementById('sms-consent');
-  if (!consent.checked) {
-    alert('Please agree to receive SMS messages to continue.');
-    return false;
-  }
-  return true;
-}
-</script>
 <script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="69ed55ff52e6155f3dc2b0a7"></script>
 </body>
 </html>
